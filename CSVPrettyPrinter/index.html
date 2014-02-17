@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+    <head>
+        <title>CSV Pretty-Printer</title>
+        <link rel="stylesheet" href="csv.css">
+    </head>
+    <body>
+        <div id="menu">
+            <h1>CSV Pretty-Printer</h1>
+            <button id="menuInput" class="on">Input</button>
+            <label>
+                <input id="menuHeader" type="checkbox">
+                <div class="checkbox"></div>
+                <span>Header row</span>
+            </label>
+            <button id="menuTable">Table</button>
+            <label>
+                <input id="menuMono" type="checkbox">
+                <div class="checkbox"></div>
+                <span>Monospace</span>
+            </label>
+            <button id="menuLink" class="off">Link</button>
+            <input id="menuLinkText" type="text" style="display: none;">
+        </div>
+        <textarea id="input"></textarea>
+        <div id="table">Enter some CSV data in the Input tab first!</div>
+        <script src="/lib/jquery-1.10.2.min.js"></script>
+        <script src="/lib/jquery.csv-0.71.min.js"></script>
+        <script src="/lib/jquery.tablesorter-2.0.5.min.js"></script>
+        <script src="csv.js"></script>
+    </body>
+</html>
